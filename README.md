@@ -348,6 +348,7 @@ __2 cpu and 3 cpu__.
 7779 codespa+  20   0   21.5g 340104  49920 S   0.7   4.2   0:31.42 node.
 ```
 
+## Running your own container instance.
 
 ***Questions:***
 
@@ -361,6 +362,7 @@ Containers are designed to be lightweight. Meaning that they are typically isola
 Yes, docker allowes user to create multiple instance
 ```
 
+## Running your own container with persistent storage
 
 ***Questions:***
 
@@ -374,6 +376,7 @@ Yes, docker allowes user to create multiple instance
 Yes, you can change the permissions of the files
 ```
 
+## You are on your own, create your own static webpage
 
 ***Questions:***
 
