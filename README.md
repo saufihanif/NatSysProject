@@ -1,29 +1,16 @@
 # Net&Sys Assignment: Running Containers for Application Development
 
-Group Name: __Fill your team name__. 
+Group Name: NetNovators 
 
 Team Mates:
-1. __Fill name__ and __matric no__
-2. __Fill name__ and __matric no__
-3. __Fill name__ and __matric no__
-
-## Rules
-1. You are allowed to have **3 group** members.
-2. When you complete the assignment, make sure to submit the repository link of your cloned project. Make sure all the files are as what you aspect in your repository. 
-3. Answer all questions in the **README.md**, in your own repository. Either use the online VSCode, terminal or github to edit. Answers are expected where you see __Fill answer here__.
-4. Learn how to use markdown. https://www.w3schools.io/file/markdown-introduction/
-
-## Forking this project repository
-1. First thing you need in doing this assignment is to have a github account. Make sure to sign up at https://www.github.com
-2. The second thing you need is to fork the Net&Sys Assignment repository in your own github account. 
-
-    1. Go to https://github.com/ZainabBashi/NatSysProject and click fork to copy the project into your own repository
-    2. Make sure that the new fork is now in your own repository
+1. HANIF SAU'FI BIN SAIFUL AZMI 2322451    
 
 ***Questions:***
 
-1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)*** __Fill answer here__.
-2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
+1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)***
+   __github.com/saufihanif/NatSysProject__.
+3. How many files and folders are in this repository. ***(1 mark)***
+   __1 Folders and 2 Files__.
 
 
 ## Exploring github codespaces
