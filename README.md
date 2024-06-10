@@ -266,63 +266,8 @@ shm              64M  8.0K   64M   1% /dev/shm
 -l: This option produces a detailed listing, showing information such as permissions, number of links, owner, group, size, and modification date for each file.__.
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __modern processors to reduce the time taken to access memory locations__.
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __2 cpu and 3 cpu__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __7779 codespa+  20   0   21.5g 340104  49920 S   0.7   4.2   0:31.42 node  __.
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** ```__7779 codespa+  20   0   21.5g 340104  49920 S   0.7   4.2   0:31.42 node  __.```
 
-## Running your own container instance.
-
-1. At the terminal, run a linux instance. By typing the following command. 
-```
-docker pull debian
-docker run --detach -it debian
-```
-2. This will run the debian container. To check if the debian container is running, type
-```bash
-@joeynor ➜ /workspaces/OSProject (main) $ docker ps -a
-CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS         PORTS     NAMES
-f65be1987f84   debian    "bash"    4 minutes ago   Up 4 minutes             romantic_jackson
-```
-
-3. Keep note of the name used by your container, this is usually given random names unless you specify your own name. Now run a bash command on the container. Make sure you use the name of your container instead of the one shown here. 
-```bash
-docker exec -i -t romantic_jackson /bin/bash
-```
-
-4. Create a file on the container. First you must make sure you are in the bash command prompt of the container. The container is new, and does not have any software other than the debian OS. To create a new file, you will need an editor installed. In the bash shell of the container, run the package manager apt-get to install nano text editor. 
-
-```bash
-root@f65be1987f84:~# apt-get update      
-
-root@f65be1987f84:~# apt-get install nano
-
-root@f65be1987f84:~# cd /root
-
-root@f65be1987f84:~# nano helloworld.txt
-```
-
-5. Edit your helloworld.txt, create your messsage and save by typing ctrl-X. Once saved, explore using the container to see where the file is located. Then exit the shell, by typing **exit**.
-
-6. Stop the container and run **docker ps -a**, and restart the container again. Is your file in the container still available?
-```bash 
-@joeynor ➜ /workspaces/OSProject (main) $ docker stop romantic_jackson
-
-@joeynor ➜ /workspaces/OSProject (main) $ docker ps -a
-CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                        PORTS     NAMES
-f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago             romantic_jackson
-
-@joeynor ➜ /workspaces/OSProject (main) $ docker restart romantic_jackson
-```
-
-7. Stop the container and delete the container. What happened to your helloworld.txt?
-
-```bash 
-@joeynor ➜ /workspaces/OSProject (main) $ docker stop romantic_jackson
-
-@joeynor ➜ /workspaces/OSProject (main) $ docker ps -a
-CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                        PORTS     NAMES
-f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago             romantic_jackson
-
-@joeynor ➜ /workspaces/OSProject (main) $ docker rm romantic_jackson
-```
 
 ***Questions:***
 
