@@ -7,15 +7,33 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)*** __github.com/saufihanif/NatSysProject__.
-3. How many files and folders are in this repository. ***(1 mark)*** __1 Folders and 2 Files__.
+1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)*** 
+```
+github.com/saufihanif/NatSysProject
+```
+
+3. How many files and folders are in this repository. ***(1 mark)*** 
+```
+1 Folders and 2 Files
+```
 
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Ubuntu__.
-2. What are the two options of RAM, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __(2 core 8GB Ram) and (4 core 16GB Ram)__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Source control allows you to track changes to codebase__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** 
+```
+Ubuntu
+```
+
+2. What are the two options of RAM, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
+```
+(2 core 8GB Ram) and (4 core 16GB Ram)
+```
+
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
+```
+Source control allows you to track changes to codebase
+```
 
 
 
@@ -333,8 +351,15 @@ __2 cpu and 3 cpu__.
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)***
+```
+Containers are designed to be lightweight. Meaning that they are typically isolated environments that do not retain data between runs.
+```
+
+2. Can we run two, or three instances of debian linux? . ***(1 mark)***
+```
+Yes, docker allowes user to create multiple instance
+```
 
 ## Running your own container with persistent storage
 
