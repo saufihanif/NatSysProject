@@ -266,7 +266,8 @@ shm              64M  8.0K   64M   1% /dev/shm
 -l: This option produces a detailed listing, showing information such as permissions, number of links, owner, group, size, and modification date for each file.__.
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __modern processors to reduce the time taken to access memory locations__.
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __2 cpu and 3 cpu__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** ```__7779 codespa+  20   0   21.5g 340104  49920 S   0.7   4.2   0:31.42 node  __.```
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
+```7779 codespa+  20   0   21.5g 340104  49920 S   0.7   4.2   0:31.42 node.```
 
 
 ***Questions:***
