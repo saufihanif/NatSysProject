@@ -364,16 +364,33 @@ Yes, docker allowes user to create multiple instance
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)***
+```
+-rw-r--r--
+```
+
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
-```bash
+```
+Yes, you can change the permissions of the files
+```
 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)***
+```
+-rw-rw-rw- 1 codespace codespace 337 Jun 10 20:52 index.html
+```
+
 2. What port is the apache web server running. ***(1 mark)***
+```
+80
+```
+
 3. What port is open for http protocol on the host machine? ***(1 mark)***
+```
+8080
+```
 
 ## Create SUB Networks
 
