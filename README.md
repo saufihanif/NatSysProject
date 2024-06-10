@@ -269,6 +269,7 @@ shm              64M  8.0K   64M   1% /dev/shm
 ```
 __2 cpu and 3 cpu__.
 ```
+
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
 ```
 7779 codespa+  20   0   21.5g 340104  49920 S   0.7   4.2   0:31.42 node.
