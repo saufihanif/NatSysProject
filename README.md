@@ -156,16 +156,26 @@ shm                65536        8     65528   1% /dev/shm
 2744    ./.git
 4732    .__.
 5. Run the command **ls** . ***(1 mark)*** __README.md  images__.
-6. Run the command **ls -asl** . ***(1 mark)*** __total 32
+6. Run the command **ls -asl** . ***(1 mark)*** 
+```
+total 32
  4 drwxrwxrwx+ 4 codespace root  4096 Jun 10 18:17 .
  4 drwxr-xrwx+ 5 codespace root  4096 Jun 10 18:17 ..
  4 drwxrwxrwx+ 9 codespace root  4096 Jun 10 18:31 .git
 16 -rw-rw-rw-  1 codespace root 13617 Jun 10 18:32 README.md
- 4 drwxrwxrwx+ 2 codespace root  4096 Jun 10 18:17 images__.
-7. Run the command **free -h** . ***(1 mark)*** __   total        used        free      shared  buff/cache   available
+ 4 drwxrwxrwx+ 2 codespace root  4096 Jun 10 18:17 images
+```
+
+7. Run the command **free -h** . ***(1 mark)*** 
+```
+total        used        free      shared  buff/cache   available
 Mem:          7.7Gi       1.7Gi       818Mi       1.0Mi       5.3Gi       5.8Gi
-Swap:            0B          0B          0B__.
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __processor       : 0
+Swap:            0B          0B          0B
+```
+
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** 
+```
+processor       : 0
 vendor_id       : AuthenticAMD
 cpu family      : 25
 model           : 1
@@ -219,8 +229,12 @@ TLB size        : 2560 4K pages
 clflush size    : 64
 cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
-power management:__.
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** __processor       : 1
+power management:
+```
+
+9. Run the command **top** and type **q** to quit. ***(1 mark)*** 
+```
+processor       : 1
 vendor_id       : AuthenticAMD
 cpu family      : 25
 model           : 1
@@ -250,21 +264,47 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5894.3 avail Mem
    7779 codespa+  20   0   21.5g 350260  49920 S   0.7   4.3   0:26.37 node                                                                                               
       1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.22 docker-init                                                                                        
       8 codespa+  20   0    7236   1792   1792 S   0.0   0.0   0:00.01 sleep                                                                                              
-     65 root      20   0   12196   3480   2560 S   0.0   0.0   0:00.00 sshd          __.
-10. Run the command **uname -a**. ***(1 mark)*** __Linux codespaces-5897c8 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
-11. What is the available free memory in the system. ***(1 mark)*** __779Mi__.
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Filesystem      Size  Used Avail Use% Mounted on
+     65 root      20   0   12196   3480   2560 S   0.0   0.0   0:00.00 sshd
+```
+
+10. Run the command **uname -a**. ***(1 mark)*** 
+```
+Linux codespaces-5897c8 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+```
+
+11. What is the available free memory in the system. ***(1 mark)*** 
+```
+779Mi
+```
+
+12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
+```
+Filesystem      Size  Used Avail Use% Mounted on
 overlay          32G   10G   20G  34% /
 tmpfs            64M     0   64M   0% /dev
 shm              64M  8.0K   64M   1% /dev/shm
 /dev/root        29G   24G  5.8G  81% /vscode
 /dev/sda1        44G  160K   42G   1% /tmp
-/dev/loop3       32G   10G   20G  34% /workspaces__.
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Linux codespaces-5897c8 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __-a: This option shows all files, including hidden files (those whose names start with a dot .).
+/dev/loop3       32G   10G   20G  34% /workspaces
+```
+
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
+```
+Linux codespaces-5897c8 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+```
+
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
+```
+-a: This option shows all files, including hidden files (those whose names start with a dot .).
 -s: This option displays the size of each file in blocks.
--l: This option produces a detailed listing, showing information such as permissions, number of links, owner, group, size, and modification date for each file.__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __modern processors to reduce the time taken to access memory locations__.
+-l: This option produces a detailed listing, showing information such as permissions, number of links, owner, group, size, and modification date for each file
+```
+
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
+```
+modern processors to reduce the time taken to access memory locations
+```
+
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
 ```
 __2 cpu and 3 cpu__.
