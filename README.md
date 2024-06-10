@@ -7,17 +7,15 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)***
-   __github.com/saufihanif/NatSysProject__.
-3. How many files and folders are in this repository. ***(1 mark)***
-   __1 Folders and 2 Files__.
+1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)***\ __github.com/saufihanif/NatSysProject__.
+3. How many files and folders are in this repository. ***(1 mark)***\ __1 Folders and 2 Files__.
 
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Ubuntu__.
-2. What are the two options of RAM, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __(2 core 8GB Ram) and (4 core 16GB Ram)__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Source control allows you to track changes to codebase__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)***\ __Ubuntu__.
+2. What are the two options of RAM, disk and vcpu configuration you can have in running codespaces . ***(1 mark)***\ __(2 core 8GB Ram) and (4 core 16GB Ram)__.
+3. Why must we commit and sync our current work on source control? ***(1 mark)***\ __Source control allows you to track changes to codebase__.
 
 
 
@@ -26,7 +24,7 @@ Team Mates:
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
 1. Run the command **pwd** . ***(1 mark)*** __/workspaces/NatSysProject__.
-2. Run the command **cat /etc/passwd** . ***(1 mark)*** 
+2. Run the command **cat /etc/passwd** . ***(1 mark)*** \
 __root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
