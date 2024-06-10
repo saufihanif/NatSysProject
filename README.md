@@ -23,9 +23,14 @@ Team Mates:
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __/workspaces/NatSysProject__.
+1. Run the command **pwd** . ***(1 mark)*** 
+```
+/workspaces/NatSysProject
+```
+
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** 
-__root:x:0:0:root:/root:/bin/bash
+```
+root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
 sys:x:3:3:sys:/dev:/usr/sbin/nologin
@@ -56,8 +61,12 @@ tmpfs              65536        0     65536   0% /dev
 shm                65536        8     65528   1% /dev/shm
 /dev/root       30298176 24271896   6009896  81% /vscode
 /dev/sda1       46127956      156  43752224   1% /tmp
-/dev/loop3      32847680 10381540  20772040  34% /workspaces__.
-4. Run the command **du** . ***(1 mark)*** __1972    ./images
+/dev/loop3      32847680 10381540  20772040  34% /workspaces
+```
+
+4. Run the command **du** . ***(1 mark)*** 
+```
+1972    ./images
 8       ./.git/info
 4       ./.git/branches
 4       ./.git/lfs/tmp
@@ -154,8 +163,14 @@ shm                65536        8     65528   1% /dev/shm
 2552    ./.git/objects
 68      ./.git/hooks
 2744    ./.git
-4732    .__.
-5. Run the command **ls** . ***(1 mark)*** __README.md  images__.
+4732    .
+```
+
+5. Run the command **ls** . ***(1 mark)***
+```
+README.md  images
+```
+
 6. Run the command **ls -asl** . ***(1 mark)*** 
 ```
 total 32
