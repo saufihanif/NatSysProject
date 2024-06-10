@@ -394,26 +394,45 @@ Yes, you can change the permissions of the files
 
 ## Create SUB Networks
 
-1. In docker, you can create your own private networks where you can run multiple services, in this part, we will create two networks, one called bluenet and the other is rednet
-2. Run the docker create network to create you networks like the ones below
-```bash
-## STEP 1:
-## Create Networks ##
-docker network create bluenet
-docker network create rednet`
 
-## STEP 2: (automatically running)
-## Create (1) Container in background called "c1" running busybox image ##
-docker run -itd --net bluenet --name c1 busybox sh
-docker run -itd --net rednet --name c2 busybox sh
-```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)***
+```
+The --name switch in Docker is used to assign a specific name to a container
+```
+
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)***
+```
+NETWORK ID     NAME      DRIVER    SCOPE
+7f55f57ce607   bluenet   bridge    local
+872972994d95   bridge    bridge    local
+98af44506347   host      host      local
+a2bddf0b81aa   none      null      local
+deb52be46267   rednet    bridge    local
+6d45423693f3   subnet1   bridge    local
+baabcc656f43   subnet2   bridge    local
+```
+
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***
+```
+Bluenet: 172.18.0.1
+Rednet: 172.19.0.1
+```
+
 4. What is the network address for the running container c1 and c2.
+```
+Bluenet: 172.18.0.2
+Rednet: 172.19.0.2
+```
+
 5. Using the command ```docker exec c1 ping c2```, which basically issue a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
+```
+PING 172.21.0.2 (172.21.0.2) 56(84) bytes of data.
+64 bytes from 172.21.0.2: icmp_seq=1 ttl=64 time=0.056 ms
+64 bytes from 172.21.0.2: icmp_seq=2 ttl=64 time=0.060 ms
+
+```
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
@@ -424,9 +443,12 @@ docker network connect bridgenet c2
 docker exec c1 ping c2
 ```
 
-## What to submit
-
-1. Make sure to commit all changes on your source control, and make sure your source control is sync to the repository. 
-2. Check your repository link, to see if all the files and answers are included in the repository. 
-3. Submit through italeem, by providing the link to your repository.
-4. Due by ***30 May, 2024***
+```
+PING c2 (172.20.0.3): 56 data bytes
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.151 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.097 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.105 ms
+64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.077 ms
+64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.087 ms
+64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.092 ms
+```
