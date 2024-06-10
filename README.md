@@ -361,53 +361,13 @@ Containers are designed to be lightweight. Meaning that they are typically isola
 Yes, docker allowes user to create multiple instance
 ```
 
-## Running your own container with persistent storage
-
-1. In the previous experiment, you might have notice that containers are not persistent. To make storage persistent, you will need to mount them. 
-At the terminal, create a new directory called **myroot**, and run a instance of debian linux and mount myroot to the container. Find out the exact path of my root, and mount it as the root folder in the debian container. 
-2. Create a file in /root on the container, the files should also appear in myroot of your host VM.
-
-```bash 
-@joeynor ➜ /workspaces/OSProject (main) $ mkdir myroot
-@joeynor ➜ /workspaces/OSProject (main) $ cd myroot/
-@joeynor ➜ /workspaces/OSProject/myroot (main) $ pwd
-/workspaces/OSProject/myroot
-
-@joeynor ➜ /workspaces/OSProject/myroot (main) $ docker run --detach -it -v /workspaces/OSProject/myroot:/root debian
-```
 
 ***Questions:***
 
 1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
-//use sudo and chown
-sudo chown -R codespace:codespace myroot
 
-```
-*** __Fill answer here__.***
-
-## You are on your own, create your own static webpage
-
-1. Create a directory called webpage in your host machine
-2. Inside the directory, create a page index.html, with any content you would like
-3. Then, run the apache webserver and mount the webpage directory to it. Hint:
-```bash
-## the -p 8080:80 flag points the host port 8080 to the container port 80
-
-docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ -p 8080:80 httpd
-```
-
-4. If it works, codespace will trigger a port assignment and provide a URL for you to access your webpage like the one below.
-
- <img src="./images/websitelink.png" width="70%">
-
-
-5. You can also see the Port in the **PORTS** tab, next to the terminal tab.
-
-6. You can then access your website by adding an index.html towards the end of your url link, like the one below. 
-
- <img src="./images/helloworldweb.png" width="70%">
 
 ***Questions:***
 
